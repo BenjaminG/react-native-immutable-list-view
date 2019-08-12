@@ -1,6 +1,6 @@
 {
   "name": "react-native-immutable-list-view",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Drop-in replacement for React Native's ListView, FlatList, and VirtualizedList.",
   "main": "lib/index.js",
   "types": "index.d.ts",
@@ -14,6 +14,7 @@
     "lint": "eslint . --ext .js,.jsx",
     "clean": "rm -rf lib",
     "build": "npm run clean && babel src --out-dir lib --ignore src/__tests__",
+    "postinstall"": "npm run build",
     "prepublish": "npm run build"
   },
   "jest": {
